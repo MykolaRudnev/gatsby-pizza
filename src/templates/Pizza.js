@@ -9,9 +9,7 @@ const PizzaGrid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 `;
 
-export default function SinglePizzaPage({ data }) {
-  const { pizza } = data;
-
+export default function SinglePizzaPage({ data: { pizza } }) {
   return (
     <PizzaGrid>
       <Img fluid={pizza.image.asset.fluid} />
